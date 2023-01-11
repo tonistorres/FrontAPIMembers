@@ -49,6 +49,7 @@ function NavBar() {
 
   const handleChangeDtNasc = (evt) => {
     setDtNasc(evt.target.value);
+    // console.log('Data Nascimento Estado:', dtNasc);
   }
 
   const handleChangeCountry = (evt) => {
@@ -63,6 +64,13 @@ function NavBar() {
 
   const handleChangeCity = (evt) => {
     setCity(evt.target.value);
+  }
+
+  function treatingDate(str) {
+    const year = str.substring(0, 4);
+    const month = str.substring(5, 7);
+    const day = str.substring(8, 10);
+    return `${day}/${month}/${year}`
   }
 
   return (
@@ -241,7 +249,7 @@ function NavBar() {
                     <button type="button" className="btn btn-primary" onClick={() => value.handleCreate({
                       "name": `${member}`,
                       "baptism": `${year}`,
-                      "birth": `${dtNasc}`,
+                      "birth": `${treatingDate(dtNasc)}`,
                       "country": `${country}`,
                       "state": `${state}`,
                       "city": `${city}`,
