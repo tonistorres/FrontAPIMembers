@@ -1,0 +1,15 @@
+.border-custom-1-nav {
+  border: 3px solid #563D7C;
+  border-radius: 12px;
+}
+
+.bg-bootstrap-nav {
+  border-radius: 8px;
+  background-color: #563D7C;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #563D7C;
+  color: #ffffff;
+}

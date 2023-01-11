@@ -1,0 +1,16 @@
+.bg-custo-thead {
+  background-color: #563D7C;
+}
+
+.color-custom-thead {
+  color: #ffffff;
+}
+
+.ct-main-table {
+  border: 2px solid green;
+  width: 100vw;
+}
+
+.width-custom-year {
+  width: 50%;
+}
