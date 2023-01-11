@@ -84,6 +84,12 @@ npm i eslint-plugin-import #8 observar
 echo "[in 1s eslint eslint-plugin-jsx-a11y]"
 sleep 1
 npm i eslint-plugin-jsx-a11y --save-dev #9
+echo "[in 1s react router dom]"
+sleep 1
+npm i react-router-dom #10
+echo "[in 1s react hook form]"
+sleep 1
+npm install react-hook-form #10 https://react-hook-form.com/get-started/  https://www.youtube.com/watch?v=selI69g6oc4
 }
 
 
