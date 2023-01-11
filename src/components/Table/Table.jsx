@@ -4,20 +4,9 @@ import { FiEdit3 } from "react-icons/fi";
 import { BsFillTrash2Fill } from "react-icons/bs";
 import imgDelete from '../../assets/delete.gif'
 import './Table.css';
-// import { urlBaseMembers } from "../../services/api";
 
 function Table() {
   const value = useContext(CrudContext);
-
-  // const handleDelete = async (id) => {
-  //   try {
-  //     await urlBaseMembers.delete(`/members/delete/${id}`);
-  //     await value.handleFindAll();
-  //   } catch (error) {
-  //     console.error("Erro Method Delete");
-  //   }
-  // }
-
 
   return (
     <div className="container-fluid d-flex align-items-center justify-content-center mt-4 mb-4">
