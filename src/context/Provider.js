@@ -12,8 +12,6 @@ function HomeProvider({ children }) {
   //update
 
   const [register, setRegister] = useState('');
-  const [cep, setCep] = useState('65413-000');
-
   const [name, setNameMember] = useState('');
   const [baptism, setBaptism] = useState(0);
   const [birth, setBirth] = useState('');
@@ -110,20 +108,8 @@ function HomeProvider({ children }) {
   const handleChangeBaptism = (evt) => {
     setBaptism(evt.target.value);
   }
-  // Cep
-  const handleKeyUpCEP = useCallback((evt) => {
-
-    evt.currentTarget.maxLenght = 9;
-    let value = evt.currentTarget.value;
-    value = value.replace(/\D/g, "");
-    value = value.replace(/^(\d{5})(\d)/, "$1-$2");
-    evt.currentTarget.value = value;
-  }, []);
 
 
-  const handleChangeCEP = (evt) => {
-    setCep(evt.target.value);
-  }
 
   // Birth
   const handleKeyUpBirth = useCallback((evt) => {
@@ -181,7 +167,7 @@ function HomeProvider({ children }) {
 
   return (
     <CrudContext.Provider value={{
-      handleKeyUpCEP,
+
       handleKeyUpBirth,
       arrayAllMembers,
       currentIdDelete,
@@ -194,7 +180,7 @@ function HomeProvider({ children }) {
       setCurrentIdDelete,
       setCurrentIdUpdate,
       //UPDATE
-      handleChangeCEP,
+
       handleChangeName,
       handleChangeBaptism,
       handleChangeBirth,
@@ -207,7 +193,6 @@ function HomeProvider({ children }) {
       handleChangeCity,
       treatingDate,
       handleFindId,
-      cep,
       register,
       name,
       baptism,
